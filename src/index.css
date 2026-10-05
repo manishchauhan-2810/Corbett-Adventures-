@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: Inter, Manrope, Arial, sans-serif; color: #102A20; background: #F5F1E8; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #F5F1E8; color: #102A20; }
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+::selection { background: #B77B45; color: #F5F1E8; }
+@layer base {
+  h1,h2,h3,h4,h5,h6 { font-family: Georgia, 'Times New Roman', serif; }
+  button,a { -webkit-tap-highlight-color: transparent; }
+}
+@layer components {
+  .page-shell { @apply bg-[#F5F1E8] text-[#102A20]; }
+  .eyebrow { @apply text-[10px] font-bold uppercase tracking-[0.32em] text-[#B77B45]; }
+  .display { @apply font-serif tracking-[-0.035em] leading-[0.94]; }
+  .body-copy { @apply text-[15px] leading-7 text-[#102A20]/70; }
+  .container-wide { @apply mx-auto w-full max-w-[1280px] px-6 md:px-10 lg:px-12; }
+  .btn-copper { @apply inline-flex items-center justify-center gap-2 rounded-[12px] bg-[#B77B45] px-6 py-3.5 text-[10px] font-bold uppercase tracking-[0.16em] text-[#F5F1E8] transition hover:-translate-y-0.5 hover:bg-[#A66D3D]; }
+  .btn-dark { @apply inline-flex items-center justify-center gap-2 rounded-[12px] bg-[#102A20] px-6 py-3.5 text-[10px] font-bold uppercase tracking-[0.16em] text-[#F5F1E8] transition hover:-translate-y-0.5 hover:bg-[#0B2119]; }
+}
+.mobile-link { @apply border-b border-white/10 py-3 text-left text-sm font-semibold uppercase tracking-[0.12em] text-white/90; }

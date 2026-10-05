@@ -1,0 +1,2 @@
+import React from 'react';
+export default function Legal({title='Legal information'}){return <main className="page-shell px-6 py-36"><div className="mx-auto max-w-4xl"><p className="eyebrow">LEGAL</p><h1 className="display mt-4 text-6xl md:text-8xl">{title}</h1><p className="mt-6 text-base leading-7 text-[#102A20]/65">Please refer to the specific privacy, terms, cancellation or refund page linked in the site footer for the applicable information.</p></div></main>}
